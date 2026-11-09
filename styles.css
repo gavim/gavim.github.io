@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  font-family: ui-rounded, "SF Pro Rounded", system-ui, sans-serif;
+  color: #583e52;
+  background: #fff8f4;
+  line-height: 1.65;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 32px 20px;
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+header, footer { text-align: center; }
+
+.brand {
+  margin: 0;
+  font-family: ui-serif, Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.brand span { color: #a53d68; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0 28px;
+}
+
+a { color: #8e3158; }
+
+nav a, footer a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 22px;
+}
+
+nav a[aria-current="page"] { background: #f8dfe8; }
+
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid #8e3158;
+  outline-offset: 4px;
+}
+
+main {
+  padding: clamp(20px, 5vw, 40px);
+  border: 1px solid #edd8e1;
+  border-radius: 28px;
+  background: #fffdfb;
+}
+
+h1 { margin-top: 0; line-height: 1.25; }
+h2 { font-size: 1.2rem; line-height: 1.4; }
+section + section { margin-top: 28px; }
+
+.contact {
+  margin: 28px 0;
+  padding: 16px 20px;
+  border: 1px solid #edd8e1;
+  border-radius: 18px;
+  background: #fff0f5;
+}
+
+.contact h2 { margin-top: 0; }
+.contact p:last-child { margin-bottom: 0; }
+
+.contact-email {
+  display: inline-block;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 8px 14px;
+  border-radius: 14px;
+  background: #f8dfe8;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+details { border-bottom: 1px solid #edd8e1; }
+summary { padding: 16px 0; cursor: pointer; font-weight: 650; }
+details p { margin-top: 0; }
+footer { padding-top: 24px; }
